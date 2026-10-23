@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaf3fa;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caixa-login {
+            background-color: white;
+            width: 330px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #b8c9d8;
+        }
+
+        h1 {
+            text-align: center;
+            color: #244766;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #b8c9d8;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #315f85;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #244766;
+        }
+
+        @media (max-width: 500px) {
+            .caixa-login {
+                width: 85%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caixa-login">
+        <h1>Entrar</h1>
+
+        <form action="dashboard.html">
+            <label for="usuario">Usuário ou e-mail:</label>
+            <input type="text" id="usuario"
+                   placeholder="Digite seu usuário" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha"
+                   placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+</body>
+</html>
